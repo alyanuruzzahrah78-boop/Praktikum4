@@ -1,10 +1,14 @@
 package com.example.projectkesekian
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
 class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -15,8 +19,7 @@ class HomeFragment : Fragment() {
 
         //data dummy
         val daftarMataKuliah = listOf(
-            Matakuliah(
-                "P01", "Pemrograman Berorientasi Objek", 3,
+            Matakuliah("P01", "Pemrograman Berorientasi Objek", 3,
                 "Wanvy Arifha Saputra", "Senin, 13:00 - 16:00", "Lab RPL"
             ),
             Matakuliah(
